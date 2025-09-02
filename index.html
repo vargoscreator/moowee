@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Moowee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <nav class="header__menu">
+                    <ul>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>About</span>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>How it works</span>
+                                <span>How it works</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>Pricing</span>
+                                <span>Pricing</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>Blog</span>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>Contacts</span>
+                                <span>Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__login hover-animate btn-2" href="#">
+                    <span>Login</span>
+                    <span>Login</span>
+                </a>
+
+
+
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="29" viewBox="0 0 46 29" fill="none">
+                        <path d="M0 2.5C0 1.11929 1.11929 0 2.5 0H43.5C44.8807 0 46 1.11929 46 2.5C46 3.88071 44.8807 5 43.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z" fill="#091423"/>
+                        <path d="M0 26.5C0 25.1193 1.11929 24 2.5 24H43.5C44.8807 24 46 25.1193 46 26.5C46 27.8807 44.8807 29 43.5 29H2.5C1.11929 29 0 27.8807 0 26.5Z" fill="#091423"/>
+                        <path d="M0 14.5C0 13.1193 1.11929 12 2.5 12H43.5C44.8807 12 46 13.1193 46 14.5C46 15.8807 44.8807 17 43.5 17H2.5C1.11929 17 0 15.8807 0 14.5Z" fill="#091423"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                        <path d="M0.736139 1.23644C1.71245 0.260131 3.29536 0.260132 4.27167 1.23644L33.2631 30.2278C34.2394 31.2041 34.2394 32.787 33.2631 33.7634C32.2867 34.7397 30.7038 34.7397 29.7275 33.7634L0.736139 4.77198C-0.240172 3.79566 -0.240171 2.21275 0.736139 1.23644Z" fill="#091423"/>
+                        <path d="M0.737494 33.7628C-0.238817 32.7865 -0.238817 31.2036 0.737494 30.2273L29.7289 1.23589C30.7052 0.259584 32.2881 0.259585 33.2644 1.2359C34.2407 2.21221 34.2407 3.79512 33.2644 4.77143L4.27303 33.7628C3.29672 34.7391 1.7138 34.7391 0.737494 33.7628Z" fill="#091423"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">
+                        <span>
+                            <span>AI-powered</span>
+                        </span>
+                        <span>
+                            <span>Personal</span>
+                        </span>
+                        <span>
+                            <span>Wellness Coach</span>
+                        </span>    
+                    </h1>
+                    <div class="hero__block">
+                        <p class="hero__users"><span>16 k</span>Active users</p>
+                        <div class="hero__buttons">
+                            <a class="hero__btn btn-2" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13" fill="none">
+                                    <path d="M0.51416 0.558594H1.97016V12.4726H0.51416V0.558594Z" fill="#091423"/>
+                                    <path d="M3.93213 0.558594H5.38813V12.4726H3.93213V0.558594Z" fill="#091423"/>
+                                    <path d="M7.3501 0.558594H8.8061V12.4726H7.3501V0.558594Z" fill="#091423"/>
+                                </svg>
+                                Get started. Its free
+                            </a>
+                            <a class="hero__btn btn-3" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z" fill="#F79E1B"/>
+                                    <path d="M7.272 11.5V8.728H4.5V7.272H7.272V4.5H8.728V7.272H11.5V8.728H8.728V11.5H7.272Z" fill="#091423"/>
+                                </svg>
+                                Book a demo
+                            </a>
+                        </div>
+                        <div class="hero__video-content">
+                            <div class="hero__video" style="width: 100%; aspect-ratio: 1439.998 / 1203.991; position: relative; overflow: hidden;">
+                                <video autoplay muted playsinline loop id="heroVideo" poster="img/hero-video.png">
+                                    <source src="video.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <svg width="0" height="0" style="position: absolute; overflow: hidden;">
+                                <defs>
+                                    <clipPath id="questions-clip" clipPathUnits="objectBoundingBox">
+                                        <path d="M1 0.643687C1 0.655294 0.991667 0.664481 0.982639 0.664481H0.923181C0.924819 0.672591 0.926111 0.680945 0.926111 0.689718C0.926111 0.746707 0.886833 0.793737 0.838889 0.793737C0.790944 0.793737 0.751667 0.746707 0.751667 0.689718C0.751667 0.680945 0.752959 0.672591 0.754597 0.664481H0.689396C0.699996 0.692695 0.705556 0.723048 0.705556 0.755475C0.705556 0.890664 0.612063 1 0.5 1C0.387937 1 0.294444 0.890664 0.294444 0.755475C0.294444 0.723048 0.300004 0.692695 0.310604 0.664481H0.0173611C0.00777083 0.664481 0 0.655294 0 0.643687V0H1V0.643687Z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hero__action">
+                        <a class="hero__action-btn btn-5" href="#">Live AI Chatbot</a>
+                        <span class="hero__action-icon"></span>
+                    </div>
+                    <div class="hero__start" data-aos="zoom-in" data-aos-delay="50">
+                        <div class="hero__start-content">
+                            <p class="hero__start-name">Start Now</p>
+                            <div class="hero__start-content-image">
+                                <img src="img/hero-image.png" alt="">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-first">
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <h2 class="about__title title-2" data-aos="fade-right" data-aos-delay="0">About</h2>
+                        <p class="about__descr" data-aos="fade-right" data-aos-delay="50">Moowee provides 24/7 intelligent support for your health and lifestyle.</p>
+                        <p class="about__descr" data-aos="fade-right" data-aos-delay="100">From personalized nutrition to real-time activity insights and sleep optimization, Moowee integrates seamlessly with your wearable data and daily routine.</p>
+                        <p class="about__descr" data-aos="fade-right" data-aos-delay="150"><strong>Your daily health, food, and fitness assistant.</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="howwork">
+                <div class="container">
+                    <div class="howwork__inner">
+                        <div class="howwork__image" data-aos="fade-right" data-aos-delay="0">
+                            <img src="img/howwork.png" alt="">
+                        </div>
+                        <div class="howwork__content">
+                            <h2 class="howwork__title title-2" data-aos="fade-right" data-aos-delay="50">How it Works</h2>
+                            <p class="howwork__name" data-aos="fade-right" data-aos-delay="100">Save time. Save energy. Optimize your lifestyle.</p>
+                            <p class="howwork__descr" data-aos="fade-right" data-aos-delay="150">Get the guidance and structure you need every day. <br>Moowee eliminates guesswork, creates sustainable routines, and helps you stay consistent.</p>
+                            <a class="howwork__btn btn-4" href="#" data-aos="fade-right" data-aos-delay="200">Scan My Meal<span class="btn-icon btn-icon-reverse"></span></a>
+                        </div>
+                        <div class="howwork__block">
+                            <div class="howwork__item" data-aos="fade-left" data-aos-delay="50">
+                                <p class="howwork__item-num">01</p>
+                                <h3 class="howwork__item-title">Food & Nutrition Planning</h3>
+                                <p class="howwork__item-descr">Receive daily meal plans and grocery suggestions tailored to your health goals, allergies, and preferences.</p>
+                            </div>
+                            <div class="howwork__item" data-aos="fade-left" data-aos-delay="100">
+                                <p class="howwork__item-num">02</p>
+                                <h3 class="howwork__item-title">Smart Food Scaner</h3>
+                                <p class="howwork__item-descr">Scan your meal, know exactly what’s inside, and get instant AI recommendations.</p>
+                            </div>
+                            <div class="howwork__item" data-aos="fade-left" data-aos-delay="150">
+                                <p class="howwork__item-num">03</p>
+                                <h3 class="howwork__item-title">Activity Monitoring & Insights</h3>
+                                <p class="howwork__item-descr">Track workouts, steps, and energy. Moowee converts raw wearable data into practical recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+
+            <section class="works">
+                <div class="container">
+                    <div class="works__inner">
+                        <div class="works__content">
+                            <div class="works__item">
+                                <div class="works__item-content">
+                                    <div class="works__item-block">
+                                        <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Food & Nutrition Planning</h3>
+                                        <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Receive daily meal plans and grocery suggestions tailored to your health goals, allergies, and preferences.</p>
+                                    </div>
+                                    <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
+                                        <img src="img/works/1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-content">
+                                    <div class="works__item-block">
+                                        <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Smart Food Scaner</h3>
+                                        <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Scan your meal, know exactly what’s inside, and get instant AI recommendations.</p>
+                                        <a class="works__item-btn btn-4" href="#" data-aos="fade-right" data-aos-delay="100">Scan My Meal <span class="btn-icon"></span></a>
+                                    </div>
+                                    <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
+                                        <img src="img/works/2.jpg" alt="">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-content">
+                                    <div class="works__item-block">
+                                        <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Activity Monitoring & Insights</h3>
+                                        <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Track workouts, steps, and energy. Moowee converts raw wearable data into practical recommendations.</p>
+                                    </div>
+                                    <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
+                                        <img src="img/works/3.jpg" alt="">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-content">
+                                    <div class="works__item-block">
+                                        <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Sleep & Recovery Optimization</h3>
+                                        <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Understand your rest patterns and get science-backed suggestions for deeper, better sleep.</p>
+                                    </div>
+                                    <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
+                                        <img src="img/works/4.jpg" alt="">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-content">
+                                    <div class="works__item-block">
+                                        <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Daily AI Wellness Reports</h3>
+                                        <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">One number. One score. A simple view of your health progress every day — with clear next steps.</p>
+                                    </div>
+                                    <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
+                                        <img src="img/works/5.jpg" alt="">
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="work">
+            <div class="container">
+                <div class="work__inner">
+                    <span class="work-icon" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="img/work/icon.png" alt="">
+                    </span>
+                    <h2 class="work__title title" data-aos="fade-right" data-aos-delay="0">Work</h2>
+                    <p class="work__descr" data-aos="fade-right" data-aos-delay="50">Get the guidance and structure you need every day. <br>Moowee eliminates guesswork, creates sustainable routines, and helps you stay consistent.</p>
+                    <div class="work__content" data-aos="fade-right" data-aos-delay="0">
+                        <div class="work__block">
+                            <div id="space_accord_process" class="w-[9.652777777777779vw]" hidden></div>
+                            <div class="work__item">
+                                <div class="work__item-top description">
+                                    <div class="work__item-step">
+                                        Step 1
+                                        <img src="img/work/1.png" alt="">
+                                    </div>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                </div>
+                            </div>
+                            <div class="work__item">
+                                <div class="work__item-top description">
+                                    <p class="work__item-step">
+                                        Step 2
+                                        <img src="img/work/2.png" alt="">
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                </div>
+                            </div>
+                            <div class="work__item">
+                                <div class="work__item-top description">
+                                    <p class="work__item-step">
+                                        Step 3
+                                        <img src="img/work/3.png" alt="">
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                </div>
+                            </div>
+                            <div class="work__item">
+                                <div class="work__item-top description">
+                                    <p class="work__item-step">
+                                        Step 4
+                                        <img src="img/work/4.png" alt="">
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                </div>
+                            </div>
+                            <div class="work__item">
+                                <div class="work__item-top description">
+                                    <p class="work__item-step">
+                                        Step 5
+                                        <img src="img/work/5.png" alt="">
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>                                
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-image">
+            <section class="pricing">
+                <div class="container">
+                    <div class="pricing__inner">
+                        <h2 class="pricing__title title" data-aos="fade-right" data-aos-delay="0">Pricing</h2>
+                        <p class="pricing__descr" data-aos="fade-up" data-aos-delay="50">Flexible subscription options built for personal health goals, active lifestyles, and long-term wellness.</p>
+                        <div class="pricing__content">
+                            <p class="pricing__word" data-aos="zoom-in" data-aos-delay="75">One credit = One word</p>
+                            <div class="pricing__block">
+                                <div class="pricing__item" data-aos="fade-right" data-aos-delay="100">
+                                    <p class="pricing__item-info">Pay-Per-Use Model</p>
+                                    <p class="pricing__item-price"><span>€</span>2</p>
+                                    <p class="pricing__item-count">100 credits</p>
+                                    <div class="pricing__item-content">
+                                        <div class="pricing__item-features">
+                                            <ul>
+                                                <li>One daily AI wellness report</li>
+                                                <li>Personalized nutrition suggestion</li>
+                                                <li>Activity & sleep insights</li>
+                                                <li>Instant coaching tips</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="pricing__item-buy btn-4" href="#">Live AI Chatbot</a>
+                                    <p class="pricing__item-ideal"><span>Ideal for:</span> work best for users needing continuous access.</p>
+                                </div>
+                                <div class="pricing__item" data-aos="fade-left" data-aos-delay="150">
+                                    <p class="pricing__item-info">Custom – Tailored for Regular</p>
+                                    <p class="pricing__item-price pricing__item-individual">Individual <br>price</p>
+                                    <p class="pricing__item-count">Tailored Credits</p>
+                                    <div class="pricing__item-content">
+                                        <div class="pricing__item-features">
+                                            <ul>
+                                                <li>AI coaching based on the proven results</li>
+                                                <li>Daily meal & nutrition plans</li>
+                                                <li>Advanced sleep & recovery analytics</li>
+                                                <li>Personalized programs based on the experts proven results</li>
+                                                <li>Priority support</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="pricing__item-buy btn-4" href="#">Contact</a>
+                                    <p class="pricing__item-ideal"><span>Ideal for:</span> work best for users needing continuous access.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner">
+                <div class="banner-bg"></div>
+                <div class="container">
+                    <div class="banner__inner">
+                        <h2 class="banner__title" data-aos="fade-right" data-aos-delay="0">No commitment, no subscription    pay only for what you use!</h2>
+                        <div class="banner__icon" data-aos="fade-right" data-aos-delay="50">
+                            <div class="banner__icon-image">
+                                <img src="img/banner-image.png" alt="">
+                            </div>
+                        </div>
+                        <a class="banner__btn btn-4" href="#" data-aos="fade-right" data-aos-delay="100">Live AI Chatbot</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="why">
+                <div class="container">
+                    <div class="why__inner">
+                        <div class="why__top">
+                            <h2 class="why__title title" data-aos="fade-right" data-aos-delay="0">Why?</h2>
+                            <p class="why__count" data-aos="fade-left" data-aos-delay="50">( 07 )</p>
+                        </div>       
+                        <div class="why__content">
+                            <p class="why__descr" data-aos="fade-right" data-aos-delay="100">AI-driven wellness that adapts to you, every single day.</p>
+                            <ul class="why__list">
+                                <li  data-aos="fade-right" data-aos-delay="150">No raw data overload — just clear insights.</li>
+                                <li  data-aos="fade-right" data-aos-delay="200">Proactive coaching, not passive tracking.</li>
+                                <li  data-aos="fade-right" data-aos-delay="250">Designed for real people, real lives, real results.</li>
+                            </ul>
+                        </div>             
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="bg-second">
+            <section class="review">
+                <div class="container">
+                    <div class="review__inner">
+                        <h2 class="review__title title" data-aos="fade-right" data-aos-delay="0">review</h2>
+                        <p class="review__who" data-aos="fade-up" data-aos-delay="50">Who is it for?</p>
+                        <div class="review__who-block">
+                            <p class="review__who-item" data-aos="zoom-in" data-aos-delay="100">Professionals who want to stay healthy with minimal effort.</p>
+                            <p class="review__who-item" data-aos="zoom-in" data-aos-delay="150">Athletes & active people who need precise recovery and nutrition insights.</p>
+                            <p class="review__who-item" data-aos="zoom-in" data-aos-delay="200">Everyday users looking to improve sleep, energy, and lifestyle.</p>
+                        </div>
+
+                        <div class="review__block" data-aos="fade-up" data-aos-delay="100">
+                            <div class="review__navigations">
+                                <button class="review__next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
+                                        <path d="M31.9142 16.4142C32.6953 15.6332 32.6953 14.3668 31.9142 13.5858L19.1863 0.857863C18.4052 0.076814 17.1389 0.0768142 16.3579 0.857863C15.5768 1.63891 15.5768 2.90524 16.3579 3.68629L27.6716 15L16.3579 26.3137C15.5768 27.0948 15.5768 28.3611 16.3579 29.1421C17.1389 29.9232 18.4052 29.9232 19.1863 29.1421L31.9142 16.4142ZM0.5 15L0.5 17L30.5 17L30.5 15L30.5 13L0.5 13L0.5 15Z" fill="#A6EEFF"/>
+                                    </svg>
+                                </button>
+                                <button class="review__prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
+                                        <path d="M1.08578 13.5858C0.304737 14.3668 0.304737 15.6332 1.08578 16.4142L13.8137 29.1421C14.5948 29.9232 15.8611 29.9232 16.6421 29.1421C17.4232 28.3611 17.4232 27.0948 16.6421 26.3137L5.32842 15L16.6421 3.68629C17.4232 2.90524 17.4232 1.63891 16.6421 0.857864C15.8611 0.0768156 14.5948 0.0768156 13.8137 0.857864L1.08578 13.5858ZM32.5 15V13L2.5 13V15V17L32.5 17V15Z" fill="#A6EEFF"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="review__slider-content">
+                                <div class="review__slider">
+                                    <div class="review__slider-block">
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Sophia Parson</h4>
+                                                    <p class="review__slide-post">creative director</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Mohamed</h4>
+                                                    <p class="review__slide-post">CMO MoraiAI.</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Mohamed</h4>
+                                                    <p class="review__slide-post">CMO MoraiAI.</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Mohamed</h4>
+                                                    <p class="review__slide-post">CMO MoraiAI.</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Mohamed</h4>
+                                                    <p class="review__slide-post">CMO MoraiAI.</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Mohamed</h4>
+                                                    <p class="review__slide-post">CMO MoraiAI.</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__slide">
+                                            <div class="review__slide-content">
+                                                <div class="review__slide-top">
+                                                    <h4 class="review__slide-name">Mohamed</h4>
+                                                    <p class="review__slide-post">CMO MoraiAI.</p>
+                                                </div>
+                                                <div class="review__slide-botom">
+                                                    <p class="review__slide-descr">Moowee finally made sense of my wearable data. It feels like having a nutritionist and coach in one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="review__add"><span>Add review</span></button>                     
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="addreview">
+                <div class="container">
+                    <div class="addreview__inner">
+                        <button class="addreview__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="32" viewBox="0 0 29 32" fill="none">
+                                <path d="M2 2L27 30.4844M2 29.1897L27 2" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </button>
+                        <h2 class="addreview__title">Add review</h2>
+                        <form class="addreview__form" action="#">
+                            <div class="addreview__form-block">
+                                <textarea class="addreview__form-textarea" name="message" placeholder="Type your possitive review here"></textarea>
+                                <div class="addreview__form-bottom">
+                                    <span class="addreview__form-error">Type of review</span>
+                                    <p class="addreview__form-hide">Your email address will not be visiable</p>
+                                </div>
+                            </div>
+                            <div class="addreview__form-block">
+                                <input class="addreview__form-input" type="text" name="name" placeholder="Name">
+                                <span class="addreview__form-error">Your name</span>
+                            </div>
+                            <div class="addreview__form-block">
+                                <input class="addreview__form-input" type="email" name="email" placeholder="Email">
+                                <span class="addreview__form-error">Please insert your email address  </span>
+                            </div>
+                            <button class="addreview__form-btn btn-3" type="submit">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__start">
+                            <a class="footer__logo" href="index.html">
+                                <img src="img/footer-logo.svg" alt="">
+                            </a>
+                            <p class="footer__descr">If there is a problem or issue about our service, we are here to help. You can reach us and we will aim to get back to you as soon as possible <a href="mailto:info@moowee.com">info@moowee.com</a></p>
+                            <p class="footer__copy">© 2025 All right reserved Moowee  </p>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Company</h4>
+                                <p class="footer__item-descr">Moowee Ltd <br>
+                                    Gonzales, 5<br>
+                                    The Leventis, Gallery Tower,<br>
+                                    Floor 13, Flat/Office<br>
+                                    UK Registered Company<br>
+                                    Company No. XXXXXXXX
+                                </p>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Menu</h4>
+                                <ul class="footer__item-menu">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">How it works</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Legacy</h4>
+                                <ul class="footer__item-menu">
+                                    <li>
+                                        <a href="privacy-policy.html">Privace Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-of-use.html">Terms of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="refund-policy.html">Refund policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Support</h4>
+                                <div class="footer__item-pay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="28" viewBox="0 0 41 28" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1868 10.9483C24.1868 10.4812 24.6256 9.97629 25.5602 9.84939C26.6551 9.74095 27.7575 9.94215 28.7557 10.4326L29.3252 7.66239C28.3535 7.29747 27.3291 7.11675 26.2986 7.12846C23.0935 7.12846 20.851 8.90642 20.8319 11.4431C20.8319 13.3196 22.4395 14.3591 23.6357 15.0003C24.8313 15.6416 25.317 16.0499 25.3081 16.6237C25.3081 17.4978 24.2986 17.8866 23.3735 17.8967C22.2173 17.9218 21.0738 17.6377 20.0478 17.0705L19.4681 19.9373C20.617 20.4011 21.8366 20.6352 23.0656 20.6278C26.4573 20.6278 28.6719 18.8687 28.6719 16.1573C28.6719 14.0958 27.0402 13.2001 25.7354 12.4832C24.856 12.0006 24.1252 11.599 24.1399 10.9766L24.1868 10.9476V10.9483ZM8.5462 16.2146L11.9195 7.33164H15.3392L10.0967 20.3942H6.67699L4.07128 9.95604C4.04832 9.71184 3.96582 9.47825 3.83191 9.27834C3.69672 9.07678 3.51532 8.9153 3.30493 8.80921C2.28602 8.30337 1.21293 7.9314 0.109375 7.70154L0.184296 7.32219H5.68715C6.04729 7.3197 6.39663 7.4529 6.67318 7.69816C6.94747 7.94319 7.12842 8.28204 7.18239 8.65396L8.5462 16.2146ZM14.0427 20.3848L16.7157 7.33231H19.9475L17.2764 20.3848H14.0427ZM35.2789 10.899L33.5602 15.7583H36.2135L35.2789 10.899ZM33.9468 7.58409C34.1948 7.40974 34.4864 7.3185 34.7837 7.32219L37.5119 7.33231L40.1094 20.3936H37.1106L36.7176 18.4502H32.5792L31.9062 20.3942H28.5526L33.4014 8.29419C33.5094 8.00529 33.6992 7.75756 33.9468 7.58409Z" fill="white"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="28" viewBox="0 0 37 28" fill="none">
+                                        <mask id="mask0_3_349" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="37" height="28">
+                                            <path d="M0.109375 0.472656H36.1094V27.4727H0.109375V0.472656Z" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0_3_349)">
+                                            <path d="M21.8212 6.89795H14.3801V21.048H21.8212V6.89795Z" fill="#FF5F00"/>
+                                            <path d="M14.8507 13.9728C14.8507 11.2229 16.0555 8.5978 18.0869 6.89747C14.402 3.82285 9.04061 4.49785 6.13489 8.42297C3.25296 12.3224 3.89132 17.9729 7.59996 21.0475C9.09295 22.2977 10.946 22.9786 12.8556 22.9786C14.7653 22.9786 16.6183 22.2977 18.1113 21.0475C17.0955 20.2024 16.2747 19.1271 15.7103 17.902C15.1459 16.6769 14.8525 15.3337 14.852 13.9728H14.8507Z" fill="#EB001B"/>
+                                            <path d="M31.8575 13.9728C31.8575 18.9476 28.0544 22.9726 23.3532 22.9726C21.44 22.9726 19.5976 22.2976 18.1094 21.0475C21.7942 17.9729 22.4319 12.3224 19.5269 8.398C19.1013 7.84787 18.6288 7.32272 18.1094 6.89747C21.7942 3.82285 27.1569 4.49785 30.0382 8.42297C31.2214 10.0057 31.8623 11.9608 31.8575 13.9728Z" fill="#F79E1B"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <a class="footer__item-telegram" href="#" target="_blank">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.39844 11.1836L10.5469 5.76953C10.5938 5.54036 10.5651 5.3763 10.4609 5.27734C10.362 5.17839 10.2292 5.16016 10.0625 5.22266L3.3125 7.82422C3.16146 7.88151 3.05729 7.94661 3 8.01953C2.94792 8.09245 2.94271 8.16276 2.98438 8.23047C3.02604 8.29297 3.10938 8.34245 3.23438 8.37891L4.96094 8.91797L8.96875 6.39453C9.07812 6.32161 9.16146 6.30599 9.21875 6.34766C9.25521 6.3737 9.24479 6.41276 9.1875 6.46484L5.94531 9.39453L5.82031 11.1758C5.9401 11.1758 6.05729 11.1185 6.17188 11.0039L7.01563 10.1914L8.76563 11.4805C9.09896 11.668 9.3099 11.569 9.39844 11.1836ZM13.5547 5.25391C13.9245 6.11849 14.1094 7.02474 14.1094 7.97266C14.1094 8.92057 13.9245 9.82682 13.5547 10.6914C13.1849 11.556 12.6875 12.3008 12.0625 12.9258C11.4375 13.5508 10.6927 14.0482 9.82813 14.418C8.96354 14.7878 8.05729 14.9727 7.10938 14.9727C6.16146 14.9727 5.25521 14.7878 4.39063 14.418C3.52604 14.0482 2.78125 13.5508 2.15625 12.9258C1.53125 12.3008 1.03385 11.556 0.664063 10.6914C0.294271 9.82682 0.109375 8.92057 0.109375 7.97266C0.109375 7.02474 0.294271 6.11849 0.664063 5.25391C1.03385 4.38932 1.53125 3.64453 2.15625 3.01953C2.78125 2.39453 3.52604 1.89713 4.39063 1.52734C5.25521 1.15755 6.16146 0.972655 7.10938 0.972655C8.05729 0.972655 8.96354 1.15755 9.82813 1.52734C10.6927 1.89713 11.4375 2.39453 12.0625 3.01953C12.6875 3.64453 13.1849 4.38932 13.5547 5.25391Z" fill="white"/>
+                                    </svg>
+                                    Telegram
+                                </a>
+                                <a class="footer__item-email" href="mailto:support@morai.io">support@morai.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
