@@ -21,55 +21,57 @@ document.addEventListener('DOMContentLoaded', () => {
         totalAmount.textContent = euroAmount.toString();
         totalTokens.textContent = tokenAmount.toLocaleString();
     }
-    initialBuyBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        switchActiveSection(1);
-        updateTokenAmount();
-    });
-    secondBuyBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        switchActiveSection(2);
-        updateTokenAmount();
-    });
-    amountInput.addEventListener('input', () => {
-        let value = parseFloat(amountInput.value) || 0;
-        if (value < 1) {
-            amountInput.value = 1;
-        } else if (value > 100000000) {
-            amountInput.value = 100000000;
-        }        
-        updateTokenAmount();
-    });
-    finalBuyBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const formData = {
-            amount: amountInput.value,
-            discount: document.querySelector('#discount').value,
-            tokens: parseFloat(amountInput.value) * 1000
-        };
-        console.log('Отправка данных:', formData);
+    if(document.querySelector('#amount')){
+        initialBuyBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchActiveSection(1);
+            updateTokenAmount();
+        });
+        secondBuyBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchActiveSection(2);
+            updateTokenAmount();
+        });
+        amountInput.addEventListener('input', () => {
+            let value = parseFloat(amountInput.value) || 0;
+            if (value < 1) {
+                amountInput.value = 1;
+            } else if (value > 100000000) {
+                amountInput.value = 100000000;
+            }        
+            updateTokenAmount();
+        });
+        finalBuyBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const formData = {
+                amount: amountInput.value,
+                discount: document.querySelector('#discount').value,
+                tokens: parseFloat(amountInput.value) * 1000
+            };
+            console.log('Отправка данных:', formData);
 
-        successBlock.classList.remove('active-failed');
-        successBlock.classList.add('active-success');
-        
-        /*
-        fetch('/api/purchase', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Успешная покупка:', data);
-            // Можно вернуться к начальному экрану
-        })
-        .catch(error => console.error('Ошибка:', error));
-        */
-    });
+            successBlock.classList.remove('active-failed');
+            successBlock.classList.add('active-success');
+            
+            /*
+            fetch('/api/purchase', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Успешная покупка:', data);
+                // Можно вернуться к начальному экрану
+            })
+            .catch(error => console.error('Ошибка:', error));
+            */
+        });
+    }
 
-    closeSuccessBtn.addEventListener('click', () => {
+    closeSuccessBtn?.addEventListener('click', () => {
         successBlock.classList.remove('active-success', 'active-failed');
     });
 
@@ -105,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handleResize() {
     const tables = document.querySelectorAll('.cabinet__purchase-table');
-    const isMobile = window.innerWidth <= 999;
+    const isMobile = window.innerWidth <= 1024;
 
     tables.forEach(table => {
         const top = table.querySelector('.cabinet__purchase-table--top');
