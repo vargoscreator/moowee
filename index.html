@@ -50,10 +50,12 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="header__login hover-animate btn-2" href="#">
-                    <span>Login</span>
-                    <span>Login</span>
-                </a>
+                <div class="header__button button-wrap">
+                    <a href="#">
+                        <span>Login</span>
+                    </a>
+                    <div class="button-shadow"></div>
+                </div>
 
 
 
@@ -89,23 +91,6 @@
                     </h1>
                     <div class="hero__block">
                         <p class="hero__users"><span>16 k</span>Active users</p>
-                        <div class="hero__buttons">
-                            <a class="hero__btn btn-2" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13" fill="none">
-                                    <path d="M0.51416 0.558594H1.97016V12.4726H0.51416V0.558594Z" fill="#091423"/>
-                                    <path d="M3.93213 0.558594H5.38813V12.4726H3.93213V0.558594Z" fill="#091423"/>
-                                    <path d="M7.3501 0.558594H8.8061V12.4726H7.3501V0.558594Z" fill="#091423"/>
-                                </svg>
-                                Get started. Its free
-                            </a>
-                            <a class="hero__btn btn-3" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z" fill="#F79E1B"/>
-                                    <path d="M7.272 11.5V8.728H4.5V7.272H7.272V4.5H8.728V7.272H11.5V8.728H8.728V11.5H7.272Z" fill="#091423"/>
-                                </svg>
-                                Book a demo
-                            </a>
-                        </div>
                         <div class="hero__video-content">
                             <div class="hero__video" style="width: 100%; aspect-ratio: 1439.998 / 1203.991; position: relative; overflow: hidden;">
                                 <video autoplay muted playsinline loop id="heroVideo" poster="img/hero-video.png">
@@ -125,14 +110,15 @@
                         <a class="hero__action-btn btn-5" href="#">Live AI Chatbot</a>
                         <span class="hero__action-icon"></span>
                     </div>
-                    <div class="hero__start" data-aos="zoom-in" data-aos-delay="50">
+                    <a class="hero__start" data-aos="zoom-in" data-aos-delay="50" href="#">
                         <div class="hero__start-content">
                             <p class="hero__start-name">Start Now</p>
                             <div class="hero__start-content-image">
                                 <img src="img/hero-image.png" alt="">
                             </div>
-                        </div>                        
-                    </div>
+                        </div>         
+                        <span class="hero__start-btn"></span>               
+                    </a>
                 </div>
             </div>
         </section>
@@ -154,28 +140,38 @@
                     <div class="howwork__inner">
                         <div class="howwork__image" data-aos="fade-right" data-aos-delay="0">
                             <img src="img/howwork.png" alt="">
+                            <div class="howwork__image-sircle"></div>
+                            <div class="howwork__image-icon"></div>
                         </div>
-                        <div class="howwork__content">
-                            <h2 class="howwork__title title-2" data-aos="fade-right" data-aos-delay="50">How it Works</h2>
-                            <p class="howwork__name" data-aos="fade-right" data-aos-delay="100">Save time. Save energy. Optimize your lifestyle.</p>
-                            <p class="howwork__descr" data-aos="fade-right" data-aos-delay="150">Get the guidance and structure you need every day. <br>Moowee eliminates guesswork, creates sustainable routines, and helps you stay consistent.</p>
-                            <a class="howwork__btn btn-4" href="#" data-aos="fade-right" data-aos-delay="200">Scan My Meal<span class="btn-icon btn-icon-reverse"></span></a>
-                        </div>
-                        <div class="howwork__block">
-                            <div class="howwork__item" data-aos="fade-left" data-aos-delay="50">
-                                <p class="howwork__item-num">01</p>
-                                <h3 class="howwork__item-title">Food & Nutrition Planning</h3>
-                                <p class="howwork__item-descr">Receive daily meal plans and grocery suggestions tailored to your health goals, allergies, and preferences.</p>
+                        <div class="howwork__right">
+                            <div class="howwork__content">
+                                <h2 class="howwork__title title-2" data-aos="fade-right" data-aos-delay="50">How it Works</h2>
+                                <p class="howwork__name" data-aos="fade-right" data-aos-delay="100">Save time. Save energy. Optimize your lifestyle.</p>
+                                <p class="howwork__descr" data-aos="fade-right" data-aos-delay="150">Get the guidance and structure you need every day. <br>Moowee eliminates guesswork, creates sustainable routines, and helps you stay consistent.</p>
+                                <div class="howwork__btn button-wrap" data-aos="fade-right" data-aos-delay="200">
+                                    <span class="btn-icon btn-icon-reverse"></span>
+                                    <a href="#">
+                                        <span>Scan My Meal</span>
+                                    </a>
+                                    <div class="button-shadow"></div>
+                                </div>
                             </div>
-                            <div class="howwork__item" data-aos="fade-left" data-aos-delay="100">
-                                <p class="howwork__item-num">02</p>
-                                <h3 class="howwork__item-title">Smart Food Scaner</h3>
-                                <p class="howwork__item-descr">Scan your meal, know exactly what’s inside, and get instant AI recommendations.</p>
-                            </div>
-                            <div class="howwork__item" data-aos="fade-left" data-aos-delay="150">
-                                <p class="howwork__item-num">03</p>
-                                <h3 class="howwork__item-title">Activity Monitoring & Insights</h3>
-                                <p class="howwork__item-descr">Track workouts, steps, and energy. Moowee converts raw wearable data into practical recommendations.</p>
+                            <div class="howwork__block">
+                                <div class="howwork__item" data-aos="fade-left" data-aos-delay="50">
+                                    <p class="howwork__item-num">01</p>
+                                    <h3 class="howwork__item-title">Food & Nutrition Planning</h3>
+                                    <p class="howwork__item-descr">Receive daily meal plans and grocery suggestions tailored to your health goals, allergies, and preferences.</p>
+                                </div>
+                                <div class="howwork__item" data-aos="fade-left" data-aos-delay="100">
+                                    <p class="howwork__item-num">02</p>
+                                    <h3 class="howwork__item-title">Smart Food Scaner</h3>
+                                    <p class="howwork__item-descr">Scan your meal, know exactly what’s inside, and get instant AI recommendations.</p>
+                                </div>
+                                <div class="howwork__item" data-aos="fade-left" data-aos-delay="150">
+                                    <p class="howwork__item-num">03</p>
+                                    <h3 class="howwork__item-title">Activity Monitoring & Insights</h3>
+                                    <p class="howwork__item-descr">Track workouts, steps, and energy. Moowee converts raw wearable data into practical recommendations.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,6 +188,13 @@
                                     <div class="works__item-block">
                                         <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Food & Nutrition Planning</h3>
                                         <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Receive daily meal plans and grocery suggestions tailored to your health goals, allergies, and preferences.</p>
+                                        <div class="works__item-btn button-wrap" data-aos="fade-right" data-aos-delay="100">
+                                            <span class="btn-icon"></span>
+                                            <a href="#"> 
+                                                <span>Scan My Meal</span>
+                                            </a>
+                                            <div class="button-shadow"></div>
+                                        </div>
                                     </div>
                                     <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                         <img src="img/works/1.jpg" alt="">
@@ -203,7 +206,13 @@
                                     <div class="works__item-block">
                                         <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Smart Food Scaner</h3>
                                         <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Scan your meal, know exactly what’s inside, and get instant AI recommendations.</p>
-                                        <a class="works__item-btn btn-4" href="#" data-aos="fade-right" data-aos-delay="100">Scan My Meal <span class="btn-icon"></span></a>
+                                        <div class="works__item-btn button-wrap" data-aos="fade-right" data-aos-delay="100">
+                                            <span class="btn-icon"></span>
+                                            <a href="#"> 
+                                                <span>Scan My Meal</span>
+                                            </a>
+                                            <div class="button-shadow"></div>
+                                        </div>
                                     </div>
                                     <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                         <img src="img/works/2.jpg" alt="">
@@ -215,6 +224,13 @@
                                     <div class="works__item-block">
                                         <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Activity Monitoring & Insights</h3>
                                         <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Track workouts, steps, and energy. Moowee converts raw wearable data into practical recommendations.</p>
+                                        <div class="works__item-btn button-wrap" data-aos="fade-right" data-aos-delay="100">
+                                            <span class="btn-icon"></span>
+                                            <a href="#"> 
+                                                <span>Scan My Meal</span>
+                                            </a>
+                                            <div class="button-shadow"></div>
+                                        </div>
                                     </div>
                                     <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                         <img src="img/works/3.jpg" alt="">
@@ -226,6 +242,13 @@
                                     <div class="works__item-block">
                                         <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Sleep & Recovery Optimization</h3>
                                         <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Understand your rest patterns and get science-backed suggestions for deeper, better sleep.</p>
+                                        <div class="works__item-btn button-wrap" data-aos="fade-right" data-aos-delay="100">
+                                            <span class="btn-icon"></span>
+                                            <a href="#"> 
+                                                <span>Scan My Meal</span>
+                                            </a>
+                                            <div class="button-shadow"></div>
+                                        </div>
                                     </div>
                                     <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                         <img src="img/works/4.jpg" alt="">
@@ -237,6 +260,13 @@
                                     <div class="works__item-block">
                                         <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Daily AI Wellness Reports</h3>
                                         <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">One number. One score. A simple view of your health progress every day — with clear next steps.</p>
+                                        <div class="works__item-btn button-wrap" data-aos="fade-right" data-aos-delay="100">
+                                            <span class="btn-icon"></span>
+                                            <a href="#"> 
+                                                <span>Scan My Meal</span>
+                                            </a>
+                                            <div class="button-shadow"></div>
+                                        </div>
                                     </div>
                                     <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                         <img src="img/works/5.jpg" alt="">
@@ -400,7 +430,12 @@
                                 <img src="img/banner-image.png" alt="">
                             </div>
                         </div>
-                        <a class="banner__btn btn-4" href="#" data-aos="fade-right" data-aos-delay="100">Live AI Chatbot</a>
+                        <div class="banner__btn button-wrap" data-aos="fade-right" data-aos-delay="100">
+                            <a href="#"> 
+                                <span>Live AI Chatbot</span>
+                            </a>
+                            <div class="button-shadow"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -662,7 +697,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="js/script.js"></script>
         <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Cabinet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body bg-image-four"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <nav class="header__menu">
+                    <ul>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>About</span>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>How it works</span>
+                                <span>How it works</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>Pricing</span>
+                                <span>Pricing</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>Blog</span>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li class="header__link">
+                            <a class="hover-animate" href="#">
+                                <span>Contacts</span>
+                                <span>Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user">
+                    <div class="header__lang button-wrap">
+                        <a href="#">
+                            <span>En</span>
+                        </a>
+                        <div class="button-shadow"></div>
+                    </div>
+                    <div class="header__tokens button-wrap">
+                        <button href="#">
+                            <span>410 tokens</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M7.72656 0.55957V14.5596M0.726562 7.55957H14.7266" stroke="#A6EEFF" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="button-shadow"></div>
+                    </div>
+                    <a class="header__user-profile" href="#">
+                        <img src="img/chat.png" alt="">
+                    </a>
+                </div>
+
+
+
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="29" viewBox="0 0 46 29" fill="none">
+                        <path d="M0 2.5C0 1.11929 1.11929 0 2.5 0H43.5C44.8807 0 46 1.11929 46 2.5C46 3.88071 44.8807 5 43.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z" fill="#091423"/>
+                        <path d="M0 26.5C0 25.1193 1.11929 24 2.5 24H43.5C44.8807 24 46 25.1193 46 26.5C46 27.8807 44.8807 29 43.5 29H2.5C1.11929 29 0 27.8807 0 26.5Z" fill="#091423"/>
+                        <path d="M0 14.5C0 13.1193 1.11929 12 2.5 12H43.5C44.8807 12 46 13.1193 46 14.5C46 15.8807 44.8807 17 43.5 17H2.5C1.11929 17 0 15.8807 0 14.5Z" fill="#091423"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                        <path d="M0.736139 1.23644C1.71245 0.260131 3.29536 0.260132 4.27167 1.23644L33.2631 30.2278C34.2394 31.2041 34.2394 32.787 33.2631 33.7634C32.2867 34.7397 30.7038 34.7397 29.7275 33.7634L0.736139 4.77198C-0.240172 3.79566 -0.240171 2.21275 0.736139 1.23644Z" fill="#091423"/>
+                        <path d="M0.737494 33.7628C-0.238817 32.7865 -0.238817 31.2036 0.737494 30.2273L29.7289 1.23589C30.7052 0.259584 32.2881 0.259585 33.2644 1.2359C34.2407 2.21221 34.2407 3.79512 33.2644 4.77143L4.27303 33.7628C3.29672 34.7391 1.7138 34.7391 0.737494 33.7628Z" fill="#091423"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="cabinet">
+            <div class="container">
+                <div class="cabinet__inner">
+                    <div class="cabinet__select">
+                        <div class="cabinet__select-btn active" data-section="purchases">
+                            <div class="button-wrap">
+                                <button href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                            <path d="M8.80469 10.6992C10.0748 10.6992 12.0116 11.0213 13.6182 11.6641C14.4211 11.9853 15.1106 12.3743 15.5908 12.8174C16.0674 13.2572 16.3047 13.7166 16.3047 14.1992V15.6992H1.30469V14.1992C1.30469 13.7166 1.54198 13.2572 2.01855 12.8174C2.49875 12.3743 3.1883 11.9853 3.99121 11.6641C5.59779 11.0213 7.53455 10.6992 8.80469 10.6992ZM8.80469 0.699219C10.7385 0.699219 12.3047 2.26536 12.3047 4.19922C12.3047 6.12848 10.7381 7.69922 8.80469 7.69922C6.87124 7.69922 5.30469 6.12848 5.30469 4.19922C5.30469 2.26536 6.87083 0.699219 8.80469 0.699219Z" stroke="white"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="button-shadow"></div>
+                            </div>
+                            Purchases
+                        </div>
+                        <div class="cabinet__select-btn" data-section="account">
+                            <div class="button-wrap">
+                                <button href="#">
+                                    <span>
+                                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.31797 16.5002C6.11059 16.5002 6.75313 15.8577 6.75313 15.065C6.75313 14.2724 6.11059 13.6299 5.31797 13.6299C4.52536 13.6299 3.88281 14.2724 3.88281 15.065C3.88281 15.8577 4.52536 16.5002 5.31797 16.5002Z" fill="white"/>
+                                            <path d="M11.8785 16.5002C12.6711 16.5002 13.3137 15.8577 13.3137 15.065C13.3137 14.2724 12.6711 13.6299 11.8785 13.6299C11.0859 13.6299 10.4434 14.2724 10.4434 15.065C10.4434 15.8577 11.0859 16.5002 11.8785 16.5002Z" fill="white"/>
+                                            <path d="M14.4775 3.46053C14.2069 3.1489 13.8132 2.96848 13.395 2.96848H3.67691C3.67691 2.96848 3.6359 2.97668 3.6195 2.97668L3.5867 2.58303C3.49649 1.4185 2.51238 0.5 1.33965 0.5H1.21663C0.880394 0.5 0.601562 0.778831 0.601562 1.11507C0.601562 1.45131 0.880394 1.73014 1.21663 1.73014H1.33965C1.8727 1.73014 2.32376 2.14838 2.36476 2.67324L2.89782 9.54561C3.02083 11.1366 4.36578 12.3831 5.96496 12.3831H13.5262C13.8624 12.3831 14.1413 12.1043 14.1413 11.7681C14.1413 11.4318 13.8624 11.153 13.5262 11.153H5.95676C5.16127 11.153 4.4806 10.6363 4.22637 9.92286H11.3858C12.9029 9.92286 14.2151 8.79113 14.4283 7.28216L14.8138 4.59226C14.8712 4.18221 14.7481 3.76397 14.4775 3.45233V3.46053ZM13.2146 7.11814C13.0834 8.02024 12.2961 8.70092 11.3858 8.70092H4.05415L3.70971 4.19041H13.395C13.477 4.19041 13.5262 4.23142 13.5508 4.26422C13.5754 4.28882 13.6082 4.34623 13.6 4.42824L13.2146 7.11814Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="button-shadow"></div>
+                            </div>
+                            Account details
+                        </div>
+                        <div class="cabinet__select-btn" data-section="refund">
+                            <div class="button-wrap">
+                                <button href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none">
+                                            <path d="M0.675781 11.1456C0.675781 13.0988 1.63616 14.9241 3.24609 16.0279C3.69699 16.3365 4.2433 16.5 4.82478 16.5H8.37835C8.95982 16.5 9.50614 16.3365 9.95759 16.0273C11.567 14.9241 12.5273 13.0988 12.5273 11.1456C12.5273 8.31979 10.5353 5.20309 7.72158 4.5293L9.55134 2.38449C9.84431 2.04129 9.90848 1.57366 9.71931 1.16406C9.53013 0.754464 9.13281 0.5 8.68192 0.5H4.52121C4.07031 0.5 3.67299 0.754464 3.48382 1.16406C3.29464 1.57366 3.35882 2.04129 3.65179 2.38449L5.48145 4.52933C2.66779 5.2032 0.675781 8.31982 0.675781 11.1456ZM8.68192 1.64286L6.60156 4.08092L4.52121 1.64286H8.68192ZM6.60156 5.53404C9.2952 5.53404 11.3845 8.55078 11.3845 11.1456C11.3845 12.7221 10.6094 14.1948 9.31194 15.0848C9.05134 15.2628 8.7288 15.3571 8.37835 15.3571H4.82478C4.47433 15.3571 4.15179 15.2628 3.89174 15.0854C2.59375 14.1948 1.81864 12.7221 1.81864 11.1456C1.81864 8.55078 3.90792 5.53404 6.60156 5.53404Z" fill="white"/>
+                                            <path d="M6.54445 8.44706C6.54891 8.44706 6.55338 8.44706 6.55784 8.44706C7.09579 8.42809 7.62983 8.64851 8.0171 9.03188C8.40606 9.42418 8.61532 9.94539 8.60583 10.4967C8.60248 10.6669 8.57402 10.8405 8.52157 11.0207C8.49377 11.1125 8.44745 11.1932 8.40839 11.2783L8.17168 10.9521C7.98585 10.6971 7.62871 10.639 7.37369 10.8249C7.11811 11.0101 7.06119 11.3678 7.24646 11.6228L7.95795 12.6033C8.1687 12.8728 8.57726 12.9152 8.82737 12.672C9.19735 12.3025 9.46242 11.8583 9.61699 11.3461C9.69958 11.0626 9.74255 10.793 9.74869 10.5185C9.76264 9.65409 9.43619 8.84048 8.82514 8.22329C8.21409 7.61894 7.35806 7.28914 6.53106 7.30421C6.21521 7.31202 5.96577 7.57374 5.97302 7.88903C5.98083 8.20041 6.23474 8.44706 6.54445 8.44706ZM6.58239 13.5888C6.61588 13.5888 6.64992 13.5882 6.6834 13.5871C6.99869 13.5771 7.2459 13.3131 7.2353 12.9973C7.22469 12.6809 6.94847 12.4147 6.64545 12.4454C6.08742 12.4605 5.57068 12.2512 5.1834 11.8639C4.79222 11.4722 4.58351 10.9532 4.5969 10.4024C4.60081 10.2266 4.63039 10.0425 4.68172 9.87117C4.70882 9.7815 4.75483 9.70208 4.79326 9.61848L5.02938 9.94371C5.14155 10.0977 5.31565 10.1792 5.49255 10.1792C5.60862 10.1792 5.72637 10.144 5.82793 10.0704C6.08295 9.88456 6.13987 9.52742 5.9546 9.27184L5.24311 8.29193C5.03591 8.02593 4.61839 7.98893 4.37536 8.22552C4.00427 8.59662 3.7392 9.03914 3.58742 9.54193C3.50706 9.8109 3.46074 10.0988 3.45405 10.3751C3.4334 11.2417 3.76041 12.0576 4.37536 12.672C4.9613 13.2579 5.76097 13.5888 6.58239 13.5888Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="button-shadow"></div>
+                            </div>
+                            Refund request
+                        </div>
+                        <div class="cabinet__select-btn " data-section="purchases">
+                            <div class="button-wrap">
+                                <button href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                            <path d="M8.37975 0.633817C5.59001 0.626499 3.13504 2.06985 1.73193 4.25042C1.66974 4.34737 1.73925 4.47543 1.8545 4.47543H3.14052C3.22833 4.47543 3.31065 4.43701 3.36553 4.36932C3.49359 4.21383 3.63079 4.06383 3.77531 3.92114C4.37167 3.3266 5.06499 2.85829 5.83697 2.53267C6.63456 2.19607 7.48337 2.02411 8.35963 2.02411C9.23588 2.02411 10.0847 2.19424 10.8823 2.53267C11.6543 2.85829 12.3476 3.3266 12.9439 3.92114C13.5403 4.51567 14.0068 5.20899 14.3342 5.97914C14.6727 6.77673 14.8428 7.62372 14.8428 8.49997C14.8428 9.37622 14.6708 10.2232 14.3342 11.0208C14.0086 11.7909 13.5403 12.4843 12.9439 13.0788C12.3476 13.6733 11.6543 14.1416 10.8823 14.4673C10.0841 14.8044 9.22612 14.9774 8.35963 14.9758C7.48337 14.9758 6.63456 14.8039 5.83697 14.4673C5.0665 14.142 4.36638 13.6705 3.77531 13.0788C3.63079 12.9343 3.49542 12.7843 3.36553 12.6306C3.31065 12.5629 3.2265 12.5245 3.14052 12.5245H1.8545C1.73925 12.5245 1.66791 12.6526 1.73193 12.7495C3.13321 14.9246 5.5772 16.3661 8.35963 16.3661C12.6805 16.3661 16.1892 12.8886 16.2331 8.58046C16.277 4.20286 12.7628 0.644793 8.37975 0.633817ZM6.06234 10.5488V9.15853H0.318222C0.237731 9.15853 0.171875 9.09268 0.171875 9.01218V7.98776C0.171875 7.90726 0.237731 7.84141 0.318222 7.84141H6.06234V6.45111C6.06234 6.32855 6.20503 6.25903 6.30016 6.33586L8.89599 8.38472C8.91348 8.39841 8.92763 8.4159 8.93736 8.43587C8.94708 8.45584 8.95214 8.47776 8.95214 8.49997C8.95214 8.52218 8.94708 8.5441 8.93736 8.56407C8.92763 8.58404 8.91348 8.60153 8.89599 8.61522L6.30016 10.6641C6.20503 10.7391 6.06234 10.6714 6.06234 10.5488Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="button-shadow"></div>
+                            </div>
+                            Log Out
+                        </div>
+                    </div>
+
+                    <div class="cabinet__content">
+
+                        <form class="cabinet__content-purchases cabinet__selected active" action="#" data-section="purchases">
+                            <div class="cabinet__content-selected purchases active">
+                                <div class="purchases__none">
+                                    <h2 class="purchases__none-title title-2">Account</h2>
+                                    <div class="purchases__none-content">
+                                        <div class="purchases__none-icon">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="25" height="25" rx="12.5" stroke="#002F37"/>
+                                                <path d="M12.4563 7.7H13.5483V14.686H12.4563V7.7ZM13.7303 16.128V17.5H12.2743V16.128H13.7303Z" fill="#002F37"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="purchases__none-name">You have no purchases</h3>
+                                        <button class="purchases__none-buy btn">Buy tokens</button>
+                                        <a class="purchases__none-check" href="#">Check Pricing Plans</a>
+                                    </div>                                
+                                </div>
+                            </div>
+    
+                            <div class="cabinet__content-selected purchase">
+                                <h2 class="purchase__title title-2">Buy tokens</h2>
+                                <p class="purchase__descr">Choose how many tokens you want to buy to use the platform</p>
+                                <div class="purchase__form form-content">
+                                    <div class="purchases__none-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" stroke="#F1361F"/>
+                                                <path d="M7.4563 2.7H8.5483V9.686H7.4563V2.7ZM8.7303 11.128V12.5H7.2743V11.128H8.7303Z" fill="#F1361F"/>
+                                            </svg>  
+                                        </div>
+                                    <label class="form-label" for="amount">Enter EURO amount</label>
+                                    <input class="form-input" type="number" id="amount" name="amount" placeholder="0" value="10" required>
+                                    <p class="purchase__form-per">€ 1.00/ per 1000 tokens</p>
+                                    <p class="purchase__form-descr">Amount of tokens will be received</p>
+                                    <p class="purchase__form-received"><span>10 000 tokens</span></p>
+                                    <h4 class="purchase__form-coupons">Discounts | Coupons</h4>
+                                    <p class="purchase__form-discount">Incert the code to get a discount</p>
+                                    <input class="form-input" type="text" id="discount" name="discount">
+                                    <button class="purchase__form-buy btn" type="button">Buy</button>
+                                    <p class="purchase__form-end">Need a large amount of tokens? <a href="#">Contact us</a> for a special offer!</p>
+                                </div>  
+                                <div class="purchase__bottom">
+                                    <p class="purchase__bottom-warning">1 token = ONE WORD</p>
+                                    <p class="purchase__bottom-warning">mininal purchase is 1 ( one ) EURO</p>
+                                </div>
+                            </div>
+    
+                            <div class="cabinet__content-selected purchase">
+                                <h2 class="purchase__title title-2">Buy tokens order</h2>
+                                <p class="purchase__descr">Take a moment to review your order. Confirm and finalize the payment.</p>
+                                <div class="purchase__form form-content">
+                                    <div class="purchase__bottom-warning">€ 1.00/ per 1000 tokens</div>
+                                    <div class="purchase__form-total">
+                                        <div class="purchase__form-total-item">
+                                            <p class="purchase__form-total-name">Amount Due (€)</p>
+                                            <p class="purchase__form-total-descr">10</p>
+                                        </div>
+                                        <div class="purchase__form-total-item">
+                                            <p class="purchase__form-total-name">Tokens received:</p>
+                                            <p class="purchase__form-total-descr">10 000</p>
+                                        </div>
+                                    </div>
+                                    <button class="purchase__form-buy btn" type="submit">Buy</button>
+                                    <p class="purchase__form-end">Need a large amount of tokens? <a href="#">Contact us</a> for a special offer!</p>
+                                </div>  
+                            </div>
+                            <div class="purchase__form-success">
+                                <div class="purchase__form-success--content">
+                                    <button class="purchase__form-success--close" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M1 1L17 17M1 16.2727L17 1" stroke="black"/>
+                                        </svg>
+                                    </button>
+                                    <p class="purchase__form-success--title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                            <path d="M40 0C17.9447 0 0 17.9447 0 40C0 62.0553 17.9447 80 40 80C62.0553 80 80 62.0553 80 40C80 17.9447 62.0553 0 40 0ZM40 6.15385C58.726 6.15385 73.8462 21.274 73.8462 40C73.8462 58.726 58.726 73.8462 40 73.8462C21.274 73.8462 6.15385 58.726 6.15385 40C6.15385 21.274 21.274 6.15385 40 6.15385ZM59.3269 25.4808L36.9231 47.8846L23.75 34.7115L19.3269 39.1346L34.7115 54.5192L36.9231 56.6346L39.1346 54.5192L63.75 29.9038L59.3269 25.4808Z" fill="#54EA75"/>
+                                        </svg>
+                                        Successful payment
+                                    </p>
+                                    <p class="purchase__form-success--title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                            <path d="M24.2754 24.2759L56.2754 56.2759M24.2754 56.2759L56.2754 24.2759" stroke="#FF0707" stroke-width="3"/>
+                                            <circle cx="40" cy="40" r="38.5" stroke="#FF0707" stroke-width="3"/>
+                                        </svg>
+                                        Payment failed
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            
+                            <!-- <div class="cabinet__content-purchase cabinet__content-selected active">
+                                <h2 class="purchase__title title-2">Purchases </h2>
+                                <div class="cabinet__purchase-table">
+                                    <div class="cabinet__purchase-table--top">
+                                        <h3 class="cabinet__purchase-table--name">Order ID</h3>
+                                        <h3 class="cabinet__purchase-table--name">Date / Time</h3>
+                                        <h3 class="cabinet__purchase-table--name">Ammount paid</h3>
+                                        <h3 class="cabinet__purchase-table--name">Token purchased</h3>
+                                    </div>
+                                    <div class="cabinet__purchase-table--content">
+                                        <div class="cabinet__purchase-table--item">
+                                            <p class="cabinet__purchase-table--order"><span>409801fd-7aae-4d98-816...</span></p>
+                                            <p class="cabinet__purchase-table--date">11/03/2024  /  09:47:07</p>
+                                            <p class="cabinet__purchase-table--paid">117 EURO</p>
+                                            <p class="cabinet__purchase-table--token">117 000</p>
+                                            <a class="cabinet__purchase-table--download" href="#">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </form>
+
+                        <div class="cabinet__selected cabinet__selected-account" data-section="account">
+                            <h2 class="purchase__title title-2">Account details</h2>
+                            <p class="purchase__descr">Take a moment to review your order. Confirm and finalize the payment.</p>
+                            <form class="purchase__form form-content" action="#">
+                                <div class="form-box">
+                                    <div class="form-block">
+                                        <label class="form-label" for="name">Name</label>
+                                        <input class="form-input" type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="last-name">Last name</label>
+                                        <input class="form-input" type="text" id="last-name" name="last-name" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="username">Username</label>
+                                        <input class="form-input" type="text" id="username" name="username" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="phone-numer">Phone numer</label>
+                                        <input class="form-input" type="tel" id="phone-numer" name="phone-numer" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="email">Registered email:</label>
+                                        <input class="form-input" type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <button class="form-btn btn" type="submit">Save changes</button>
+                            </form> 
+                        </div>
+
+                        <div class="cabinet__selected cabinet__selected-account" data-section="refund">
+                            <h2 class="purchase__title title-2">Refund Request</h2>
+                            <p class="purchase__descr">Request a refund easily – just complete the form</p>
+                            <form class="purchase__form form-content" action="#">
+                                <div class="form-box">
+                                    <div class="form-block">
+                                        <label class="form-label" for="order-id">Order ID</label>
+                                        <input class="form-input" type="text" id="order-id" name="order-id" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="date-of-purchase">Date of purchase</label>
+                                        <input class="form-input" type="text" id="date-of-purchase" name="date-of-purchase" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="amount-paid">Amount paid, EURO</label>
+                                        <input class="form-input" type="text" id="amount-paid" name="amount-paid" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="comments">Comments:</label>
+                                        <textarea class="form-textarea" name="comments" id="comments"></textarea>
+                                    </div>
+                                </div>
+                                <button class="form-btn btn" type="submit">Request a Refund</button>
+                                <p class="purchase__form-end">In case you have any issues you can <a href="#">Contact</a> us for support in telegram!</p>
+                            </form> 
+                            <div class="purchase__bottom">
+                                <ul>
+                                    <li>Application for the refund will be created. It can take up to 48 hours to process the payment. </li>
+                                    <li>Check <a href="#">Refund Policy</a> in case you have any questions.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__start">
+                            <a class="footer__logo" href="index.html">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <p class="footer__descr">If there is a problem or issue about our service, we are here to help. You can reach us and we will aim to get back to you as soon as possible <a href="mailto:info@moowee.com">info@moowee.com</a></p>
+                            <p class="footer__copy">© 2025 All right reserved Moowee  </p>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Company</h4>
+                                <p class="footer__item-descr">Moowee Ltd <br>
+                                    Gonzales, 5<br>
+                                    The Leventis, Gallery Tower,<br>
+                                    Floor 13, Flat/Office<br>
+                                    UK Registered Company<br>
+                                    Company No. XXXXXXXX
+                                </p>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Menu</h4>
+                                <ul class="footer__item-menu">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">How it works</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Legacy</h4>
+                                <ul class="footer__item-menu">
+                                    <li>
+                                        <a href="privacy-policy.html">Privace Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-of-use.html">Terms of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="refund-policy.html">Refund policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__item-name">Support</h4>
+                                <div class="footer__item-pay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="14" viewBox="0 0 41 14" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1868 4.28325C24.1868 3.81615 24.6256 3.31125 25.5602 3.18435C26.6551 3.07592 27.7575 3.27711 28.7557 3.76755L29.3252 0.997351C28.3535 0.632429 27.3291 0.451711 26.2986 0.463426C23.0935 0.463426 20.851 2.24138 20.8319 4.77803C20.8319 6.65453 22.4395 7.69403 23.6357 8.33528C24.8313 8.97653 25.317 9.3849 25.3081 9.95865C25.3081 10.8328 24.2986 11.2216 23.3735 11.2317C22.2173 11.2567 21.0738 10.9726 20.0478 10.4055L19.4681 13.2722C20.617 13.736 21.8366 13.9701 23.0656 13.9628C26.4573 13.9628 28.6719 12.2037 28.6719 9.49222C28.6719 7.43077 27.0402 6.53505 25.7354 5.8182C24.856 5.33558 24.1252 4.93395 24.1399 4.3116L24.1868 4.28258V4.28325ZM8.5462 9.5496L11.9195 0.6666H15.3392L10.0967 13.7292H6.67699L4.07128 3.291C4.04832 3.04681 3.96582 2.81321 3.83191 2.6133C3.69672 2.41174 3.51532 2.25026 3.30493 2.14418C2.28602 1.63833 1.21293 1.26636 0.109375 1.0365L0.184296 0.657151H5.68715C6.0473 0.654659 6.39663 0.78786 6.67318 1.03313C6.94747 1.27815 7.12842 1.617 7.18239 1.98893L8.5462 9.5496ZM14.0427 13.7198L16.7157 0.667276H19.9475L17.2764 13.7198H14.0427ZM35.2789 4.23398L33.5602 9.0933H36.2135L35.2789 4.23398ZM33.9468 0.919051C34.1948 0.744697 34.4864 0.653463 34.7837 0.657151L37.5119 0.667276L40.1094 13.7285H37.1106L36.7176 11.7852H32.5792L31.9062 13.7292H28.5526L33.4014 1.62915C33.5094 1.34025 33.6992 1.09253 33.9468 0.919051Z" fill="#002F37"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="28" viewBox="0 0 37 28" fill="none">
+                                        <mask id="mask0_3_349" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="37" height="28">
+                                            <path d="M0.109375 0.472656H36.1094V27.4727H0.109375V0.472656Z" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0_3_349)">
+                                            <path d="M21.8212 6.89795H14.3801V21.048H21.8212V6.89795Z" fill="#FF5F00"/>
+                                            <path d="M14.8507 13.9728C14.8507 11.2229 16.0555 8.5978 18.0869 6.89747C14.402 3.82285 9.04061 4.49785 6.13489 8.42297C3.25296 12.3224 3.89132 17.9729 7.59996 21.0475C9.09295 22.2977 10.946 22.9786 12.8556 22.9786C14.7653 22.9786 16.6183 22.2977 18.1113 21.0475C17.0955 20.2024 16.2747 19.1271 15.7103 17.902C15.1459 16.6769 14.8525 15.3337 14.852 13.9728H14.8507Z" fill="#EB001B"/>
+                                            <path d="M31.8575 13.9728C31.8575 18.9476 28.0544 22.9726 23.3532 22.9726C21.44 22.9726 19.5976 22.2976 18.1094 21.0475C21.7942 17.9729 22.4319 12.3224 19.5269 8.398C19.1013 7.84787 18.6288 7.32272 18.1094 6.89747C21.7942 3.82285 27.1569 4.49785 30.0382 8.42297C31.2214 10.0057 31.8623 11.9608 31.8575 13.9728Z" fill="#F79E1B"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <a class="footer__item-telegram" href="#" target="_blank">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.39844 11.1836L10.5469 5.76953C10.5938 5.54036 10.5651 5.3763 10.4609 5.27734C10.362 5.17839 10.2292 5.16016 10.0625 5.22266L3.3125 7.82422C3.16146 7.88151 3.05729 7.94661 3 8.01953C2.94792 8.09245 2.94271 8.16276 2.98438 8.23047C3.02604 8.29297 3.10938 8.34245 3.23438 8.37891L4.96094 8.91797L8.96875 6.39453C9.07812 6.32161 9.16146 6.30599 9.21875 6.34766C9.25521 6.3737 9.24479 6.41276 9.1875 6.46484L5.94531 9.39453L5.82031 11.1758C5.9401 11.1758 6.05729 11.1185 6.17188 11.0039L7.01563 10.1914L8.76563 11.4805C9.09896 11.668 9.3099 11.569 9.39844 11.1836ZM13.5547 5.25391C13.9245 6.11849 14.1094 7.02474 14.1094 7.97266C14.1094 8.92057 13.9245 9.82682 13.5547 10.6914C13.1849 11.556 12.6875 12.3008 12.0625 12.9258C11.4375 13.5508 10.6927 14.0482 9.82813 14.418C8.96354 14.7878 8.05729 14.9727 7.10938 14.9727C6.16146 14.9727 5.25521 14.7878 4.39063 14.418C3.52604 14.0482 2.78125 13.5508 2.15625 12.9258C1.53125 12.3008 1.03385 11.556 0.664063 10.6914C0.294271 9.82682 0.109375 8.92057 0.109375 7.97266C0.109375 7.02474 0.294271 6.11849 0.664063 5.25391C1.03385 4.38932 1.53125 3.64453 2.15625 3.01953C2.78125 2.39453 3.52604 1.89713 4.39063 1.52734C5.25521 1.15755 6.16146 0.972655 7.10938 0.972655C8.05729 0.972655 8.96354 1.15755 9.82813 1.52734C10.6927 1.89713 11.4375 2.39453 12.0625 3.01953C12.6875 3.64453 13.1849 4.38932 13.5547 5.25391Z" fill="#002F37"/>
+                                    </svg>
+                                    Telegram
+                                </a>
+                                <a class="footer__item-email" href="mailto:support@morai.io">support@morai.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cabinet.js"></script>
+</body>
+</html>

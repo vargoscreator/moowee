@@ -163,7 +163,7 @@ button{
     line-height: 1.11vw;
     position: relative;
 }
-.btn-4 .btn-icon{
+.btn-icon{
     pointer-events: none;
     display: inline-block;
     position: absolute;
@@ -178,7 +178,7 @@ button{
     min-width: 1.81vw;
     background-size: contain;
 }
-.btn-4 .btn-icon.btn-icon-reverse{
+.btn-icon.btn-icon-reverse{
     transform: scaleX(-1);
     right: initial;
     left: -1.74vw;
@@ -578,15 +578,18 @@ input, textarea{
     position: relative;
     color: #030104;
     text-align: center;
-    font-size: 0.97vw;
+    font-size: 1.78vw;
     font-weight: 600;
-    line-height: 1.11vw;
-    letter-spacing: 0.13vw;
+    line-height: 2.03vw;
+    letter-spacing: 0.23vw;
+    position: absolute;
+    bottom: 5vw;
+    right: 4vw;
 }
 .hero__users span{
     color: #FFF;
     font-family: 'Centauri', sans-serif;
-    font-size: 2.22vw;
+    font-size: 3.31vw;
     font-weight: 400;
     line-height: 115%;
     letter-spacing: normal;
@@ -611,9 +614,11 @@ input, textarea{
     transform: translateX(-50%);
     bottom: -24.31vw;
 }
-.hero__action-btn{
-    font-size: 0.97vw;
+.hero__action-btn {
     width: 15.63vw;
+    font-size: 0.97vw;
+    font-style: normal;
+    font-weight: 400;
 }
 .hero__action-icon{
     position: initial;
@@ -634,18 +639,33 @@ input, textarea{
     right: 7.33vw;
     bottom: -14.5vw;
 }
-.hero__start::after {
+.hero__start-btn{
+    position: absolute;
+    z-index: 1;
+    border-radius: 54.214px;
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(1.6941888332366943px);
+    width: 3.76vw;
+    height: 3.76vw;
+    min-width: 3.76vw;
+    border-radius: 50%;
+    top: 2.99vw;
+    right: 2.92vw;
+}
+.hero__start-btn::before{
     content: '';
     position: absolute;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='29' viewBox='0 0 28 29' fill='none'%3E%3Cpath d='M25.1793 20.8603C25.9209 19.5895 25.4919 17.9582 24.2211 17.2166L23.6815 16.9017C21.5337 15.6485 21.5001 12.5569 23.6201 11.2573L26.679 9.38199C27.5626 8.84024 28.0419 7.82687 27.9001 6.80011C27.6443 4.94887 25.5825 3.95869 23.9777 4.91642L21.1125 6.6264C18.9932 7.89123 16.305 6.35674 16.3164 3.88869L16.3188 3.38168C16.3256 1.91037 15.1384 0.712093 13.6671 0.705292C12.1958 0.698492 10.9976 1.88569 10.9908 3.35697L10.9882 3.90907C10.9768 6.38484 8.28949 7.91979 6.15115 6.67198L4.56731 5.74774C3.81964 5.31144 2.90538 5.2702 2.12146 5.6374C0.206163 6.53455 0.0750578 9.20893 1.89342 10.2891L3.50361 11.2456C5.6347 12.5116 5.60829 15.6057 3.45592 16.8351L2.96052 17.1181C1.68295 17.8478 1.23884 19.4751 1.96857 20.7526C2.6983 22.0302 4.32554 22.4743 5.60311 21.7446L6.1184 21.4503C8.2738 20.2191 10.9591 21.7547 10.9912 24.2367L11.0146 26.0451C11.0402 28.0294 13.1901 29.2545 14.9103 28.265C15.713 27.8033 16.2095 26.9495 16.2138 26.0235L16.2218 24.303C16.2333 21.8273 18.9205 20.2924 21.0589 21.5402L21.5357 21.8185C22.8065 22.56 24.4378 22.131 25.1793 20.8603Z' fill='%23F79E1B'/%3E%3C/svg%3E");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 45 45' fill='none'%3E%3Cpath d='M44.9864 22.042C44.9864 34.2058 35.1257 44.0665 22.962 44.0665C10.7982 44.0665 0.9375 34.2058 0.9375 22.042C0.9375 9.87826 10.7982 0.0175781 22.962 0.0175781C35.1257 0.0175781 44.9864 9.87826 44.9864 22.042Z' fill='white'/%3E%3Cpath d='M22.2705 27.7053V16.3176H24.5362V27.7053H22.2705ZM17.7137 23.1401V20.8744H29.1014V23.1401H17.7137Z' fill='%2318171C'/%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 1.81vw;
-    height: 1.81vw;
-    min-width: 1.81vw;
-    top: 2.92vw;
-    right: 1.94vw;
+    width: 3.06vw;
+    height: 3.06vw;
+    min-width: 3.06vw;
+    border-radius: 50%;
 }
 .hero__start-content{
     position: absolute;
@@ -700,6 +720,11 @@ input, textarea{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.hero__users::after{
+    transform: rotate(-180deg);
+    right: 0.57vw;
+    bottom: -3.51vw;
 }
 
 @media (max-width: 1280px) {
@@ -922,7 +947,6 @@ input, textarea{
 .work-icon img{
     opacity: 0.9;
     width: 100%;
-    transform: rotate(-43.178deg);
 }
 .work__descr{
     width: 100%;
@@ -1099,6 +1123,7 @@ input, textarea{
     background-image: url("data:image/svg+xml,%0A%3Csvg width='1441' height='3771' viewBox='0 0 1441 3771' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_n_7_47)'%3E%3Crect width='1440' height='2868' transform='matrix(1 0 0 -1 0 3771)' fill='url(%23paint0_linear_7_47)'/%3E%3C/g%3E%3Cg filter='url(%23filter1_n_7_47)'%3E%3Crect width='1440' height='903' transform='translate(0.5)' fill='url(%23paint1_linear_7_47)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_n_7_47' x='0' y='903' width='1440' height='2868' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2 2' stitchTiles='stitch' numOctaves='3' result='noise' seed='2442' /%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise' /%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped' /%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood' /%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1' /%3E%3CfeMerge result='effect1_noise_7_47'%3E%3CfeMergeNode in='shape' /%3E%3CfeMergeNode in='color1' /%3E%3C/feMerge%3E%3C/filter%3E%3Cfilter id='filter1_n_7_47' x='0.5' y='0' width='1440' height='903' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1 1' stitchTiles='stitch' numOctaves='3' result='noise' seed='5805' /%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise' /%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped' /%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood' /%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1' /%3E%3CfeMerge result='effect1_noise_7_47'%3E%3CfeMergeNode in='shape' /%3E%3CfeMergeNode in='color1' /%3E%3C/feMerge%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_7_47' x1='720' y1='0' x2='720' y2='2868' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2301363F'/%3E%3Cstop offset='1' stop-color='%232497AA'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_7_47' x1='720' y1='0' x2='720' y2='903' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2301363F'/%3E%3Cstop offset='1' stop-color='%232497AA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
     background-size: cover;
     margin-top: -0.07vw;
+    overflow: hidden;
 }
 .bg-image{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='1712' viewBox='0 0 1440 1712' fill='none'%3E%3Cg filter='url(%23filter0_n_1_62)'%3E%3Crect y='0.78125' width='1440' height='1711.22' fill='url(%23paint0_linear_1_62)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_n_1_62' x='0' y='0.78125' width='1440' height='1711.22' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2 2' stitchTiles='stitch' numOctaves='3' result='noise' seed='2442'/%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise'/%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped'/%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood'/%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1'/%3E%3CfeMerge result='effect1_noise_1_62'%3E%3CfeMergeNode in='shape'/%3E%3CfeMergeNode in='color1'/%3E%3C/feMerge%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_1_62' x1='720' y1='0.78125' x2='720' y2='1712' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23016D7E'/%3E%3Cstop offset='0.567308' stop-color='%23C7C8C3'/%3E%3Cstop offset='1' stop-color='%23016D7E'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
@@ -1166,7 +1191,7 @@ input, textarea{
 }
 .pricing__item-info::before{
     content: '';
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='26' height='27' viewBox='0 0 26 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.974609' width='25' height='25' rx='12.5' fill='%23091423'/%3E%3Crect x='0.5' y='0.974609' width='25' height='25' rx='12.5' stroke='%23091423'/%3E%3Cpath d='M12.1574 15.1606V12.7386H12.4934C13.2401 12.7386 13.7954 12.5753 14.1594 12.2486C14.5328 11.9126 14.7194 11.4506 14.7194 10.8626C14.7194 10.3119 14.5561 9.87794 14.2294 9.56061C13.9028 9.24328 13.4874 9.08461 12.9834 9.08461C12.6568 9.08461 12.3628 9.15461 12.1014 9.29461C11.8401 9.43461 11.6348 9.63061 11.4854 9.88261C11.3454 10.1346 11.2754 10.4333 11.2754 10.7786H10.1554C10.1554 10.4706 10.1974 10.1813 10.2814 9.91061C10.3748 9.63061 10.5054 9.37861 10.6734 9.15461C10.8508 8.92128 11.0561 8.72528 11.2894 8.56661C11.5321 8.39861 11.7981 8.26794 12.0874 8.17461C12.3861 8.08128 12.7081 8.03461 13.0534 8.03461C13.4828 8.03461 13.8654 8.10461 14.2014 8.24461C14.5468 8.38461 14.8408 8.58528 15.0834 8.84661C15.3261 9.09861 15.5128 9.39728 15.6434 9.74261C15.7741 10.0786 15.8394 10.4473 15.8394 10.8486C15.8394 11.4086 15.7274 11.8846 15.5034 12.2766C15.2794 12.6686 14.9714 12.9766 14.5794 13.2006C14.1968 13.4246 13.7628 13.5646 13.2774 13.6206V15.1606H12.1574ZM11.9894 17.9746V16.6026H13.4314V17.9746H11.9894Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='26' height='26' rx='13' fill='%23A6EEFF'/%3E%3Cpath d='M12.4563 7.7H13.5483V14.686H12.4563V7.7ZM13.7303 16.128V17.5H12.2743V16.128H13.7303Z' fill='%230B6371'/%3E%3C/svg%3E%0A");
     display: flex;
     align-items: center;
     min-width: 1.81vw;
@@ -2222,7 +2247,7 @@ input, textarea{
 }
 /* howwork */
 .howwork{
-    overflow: hidden;
+    
 }
 .howwork__inner{
     display: flex;
@@ -2233,13 +2258,56 @@ input, textarea{
     margin-bottom: 2.99vw;
     display: flex;
     align-items: center;
-    margin-left: -5.56vw;
-    max-width: 32.99vw;
-    mix-blend-mode: plus-lighter;
+    width: 100%;
+    max-width: 16.25vw;
+    mix-blend-mode: luminosity;
+    position: relative;
+}
+.howwork__image::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='306' height='390' viewBox='0 0 306 390' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 55.043V2H41.9737M302.609 55.043V2H262.636M303.609 334.715V387.758H263.636M3 334.715V387.758H42.9737' stroke='%23A6EEFF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20.95vw;
+    height: 26.79vw;
 }
 .howwork__image img{
-    opacity: 0.9;
     width: 100%;
+}
+.howwork__image-sircle{
+    position: absolute;
+    bottom: -8vw;
+    width: 6.94vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6.94vw;
+    min-width: 6.94vw;
+    background-image: url('../img/scaner.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.howwork__image-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.11vw;
+    height: 1.11vw;
+    min-width: 1.11vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.howwork__right{
+    width: 100%;
+    max-width: 59.86vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
 }
 .howwork__content{
     width: 100%;
@@ -2261,6 +2329,7 @@ input, textarea{
 }
 .howwork__btn{
     margin-top: 4.65vw;
+    margin-left: 0;
 }
 .howwork__block{
     display: flex;
@@ -2353,4 +2422,270 @@ input, textarea{
     .howwork__image{
         max-width: 220px;
     }
+}
+
+@property --angle-1 {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -75deg;
+}
+@property --angle-2 {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -45deg;
+}
+:root {
+  --global--size: clamp(2rem, 4vw, 5rem);
+  --anim--hover-time: 400ms;
+  --anim--hover-ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+.button-wrap {
+    display: flex;
+    max-width: max-content;
+  position: relative;
+  z-index: 2;
+  border-radius: 999vw;
+  background: transparent;
+  pointer-events: none;
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+}
+.button-shadow {
+  --shadow-cuttoff-fix: 2em;
+  position: absolute;
+  width: calc(100% + var(--shadow-cuttoff-fix));
+  height: calc(100% + var(--shadow-cuttoff-fix));
+  top: calc(0% - var(--shadow-cuttoff-fix) / 2);
+  left: calc(0% - var(--shadow-cuttoff-fix) / 2);
+  filter: blur(clamp(2px, 0.125em, 12px));
+  -webkit-filter: blur(clamp(2px, 0.125em, 12px));
+  -moz-filter: blur(clamp(2px, 0.125em, 12px));
+  -ms-filter: blur(clamp(2px, 0.125em, 12px));
+  overflow: visible;
+  pointer-events: none;
+}
+.button-shadow::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  border-radius: 999vw;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+  width: calc(100% - var(--shadow-cuttoff-fix) - 0.25em);
+  height: calc(100% - var(--shadow-cuttoff-fix) - 0.25em);
+  top: calc(var(--shadow-cuttoff-fix) - 0.5em);
+  left: calc(var(--shadow-cuttoff-fix) - 0.875em);
+  padding: 0.125em;
+  box-sizing: border-box;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+  overflow: visible;
+  opacity: 1;
+}
+.button-wrap a,
+.button-wrap button{
+  --border-width: clamp(1px, 0.0625em, 4px);
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  pointer-events: auto;
+  z-index: 3;
+  background: linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 999vw;
+  box-shadow: inset 0 0.125em 0.125em rgba(0, 0, 0, 0.05),
+    inset 0 -0.125em 0.125em rgba(255, 255, 255, 0.5),
+    0 0.25em 0.125em -0.125em rgba(0, 0, 0, 0.2),
+    0 0 0.1em 0.25em inset rgba(255, 255, 255, 0.2),
+    0 0 0 0 rgba(255, 255, 255, 1);
+  backdrop-filter: blur(clamp(1px, 0.125em, 4px));
+  -webkit-backdrop-filter: blur(clamp(1px, 0.125em, 4px));
+  -moz-backdrop-filter: blur(clamp(1px, 0.125em, 4px));
+  -ms-backdrop-filter: blur(clamp(1px, 0.125em, 4px));
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+}
+.button-wrap a:hover,
+.button-wrap button:hover {
+  transform: scale(0.975);
+  backdrop-filter: blur(0.01em);
+  -webkit-backdrop-filter: blur(0.01em);
+  -moz-backdrop-filter: blur(0.01em);
+  -ms-backdrop-filter: blur(0.01em);
+  box-shadow: inset 0 0.125em 0.125em rgba(0, 0, 0, 0.05),
+    inset 0 -0.125em 0.125em rgba(255, 255, 255, 0.5),
+    0 0.15em 0.05em -0.1em rgba(0, 0, 0, 0.25),
+    0 0 0.05em 0.1em inset rgba(255, 255, 255, 0.5),
+    0 0 0 0 rgba(255, 255, 255, 1);
+}
+.button-wrap a span,
+.button-wrap button span {
+    min-height: 3.19vw;
+    min-width: 15.63vw;
+  position: relative;
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0em 0.25em 0.05em rgba(0, 0, 0, 0.1);
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+  padding-inline: 1.5em;
+  padding-block: 0.875em;
+  text-align: center;
+}
+.button-wrap a:hover span,
+.button-wrap button:hover span {
+  text-shadow: 0.025em 0.025em 0.025em rgba(0, 0, 0, 0.12);
+}
+.button-wrap a span::after,
+.button-wrap button span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: calc(100% - var(--border-width));
+  height: calc(100% - var(--border-width));
+  top: calc(0% + var(--border-width) / 2);
+  left: calc(0% + var(--border-width) / 2);
+  box-sizing: border-box;
+  border-radius: 999vw;
+  overflow: clip;
+  background: linear-gradient(
+    var(--angle-2),
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 40% 50%,
+    rgba(255, 255, 255, 0) 55%
+  );
+  z-index: 3;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  transition: background-position calc(var(--anim--hover-time) * 1.25)
+      var(--anim--hover-ease),
+    --angle-2 calc(var(--anim--hover-time) * 1.25) var(--anim--hover-ease);
+}
+.button-wrap a:hover span::after,
+.button-wrap button:hover span::after {
+  background-position: 25% 50%;
+}
+.button-wrap a:active span::after,
+.button-wrap button:active span::after {
+  background-position: 50% 15%;
+  --angle-2: -15deg;
+}
+@media (hover: none) and (pointer: coarse) {
+    .button-wrap a span::after,
+    .button-wrap a:active span::after,
+    .button-wrap button span::after,
+    .button-wrap button:active span::after {
+        --angle-2: -45deg;
+    }
+}
+.button-wrap a::after,
+.button-wrap button::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: 999vw;
+  width: calc(100% + var(--border-width));
+  height: calc(100% + var(--border-width));
+  top: calc(0% - var(--border-width) / 2);
+  left: calc(0% - var(--border-width) / 2);
+  padding: var(--border-width);
+  box-sizing: border-box;
+  background: conic-gradient(
+      from var(--angle-1) at 50% 50%,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0) 5% 40%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 60% 95%,
+      rgba(0, 0, 0, 0.5)
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  transition: all var(--anim--hover-time) var(--anim--hover-ease),
+    --angle-1 500ms ease;
+  box-shadow: inset 0 0 0 calc(var(--border-width) / 2) rgba(255, 255, 255, 0.5);
+}
+.button-wrap a:hover::after,
+.button-wrap button:hover::after {
+  --angle-1: -125deg;
+}
+.button-wrap a:active::after,
+.button-wrap button:active::after {
+  --angle-1: -75deg;
+}
+@media (hover: none) and (pointer: coarse) {
+    .button-wrap a::after,
+    .button-wrap a:hover::after,
+    .button-wrap a:active::after,
+    .button-wrap button::after,
+    .button-wrap button:hover::after,
+    .button-wrap button:active::after {
+    --angle-1: -75deg;
+  }
+}
+.button-wrap:has(a:hover) .button-shadow,
+.button-wrap:has(button:hover) .button-shadow {
+  filter: blur(clamp(2px, 0.0625em, 6px));
+  -webkit-filter: blur(clamp(2px, 0.0625em, 6px));
+  -moz-filter: blur(clamp(2px, 0.0625em, 6px));
+  -ms-filter: blur(clamp(2px, 0.0625em, 6px));
+  transition: filter var(--anim--hover-time) var(--anim--hover-ease);
+}
+.button-wrap:has(a:hover) .button-shadow::after,
+.button-wrap:has(button:hover) .button-shadow::after {
+  top: calc(var(--shadow-cuttoff-fix) - 0.875em);
+  opacity: 1;
+}
+.button-wrap:has(a:active),
+.button-wrap:has(button:active) {
+  transform: rotate3d(1, 0, 0, 25deg);
+}
+.button-wrap:has(a:active) a,
+.button-wrap:has(button:active) button {
+  box-shadow: inset 0 0.125em 0.125em rgba(0, 0, 0, 0.05),
+    inset 0 -0.125em 0.125em rgba(255, 255, 255, 0.5),
+    0 0.125em 0.125em -0.125em rgba(0, 0, 0, 0.2),
+    0 0 0.1em 0.25em inset rgba(255, 255, 255, 0.2),
+    0 0.225em 0.05em 0 rgba(0, 0, 0, 0.05),
+    0 0.25em 0 0 rgba(255, 255, 255, 0.75),
+    inset 0 0.25em 0.05em 0 rgba(0, 0, 0, 0.15);
+}
+.button-wrap:has(a:active) .button-shadow,
+.button-wrap:has(button:active) .button-shadow {
+  filter: blur(clamp(2px, 0.125em, 12px));
+  -webkit-filter: blur(clamp(2px, 0.125em, 12px));
+  -moz-filter: blur(clamp(2px, 0.125em, 12px));
+  -ms-filter: blur(clamp(2px, 0.125em, 12px));
+}
+.button-wrap:has(a:active) .button-shadow::after,
+.button-wrap:has(button:active) .button-shadow::after {
+  top: calc(var(--shadow-cuttoff-fix) - 0.5em);
+  opacity: 0.75;
+}
+.button-wrap:has(a:active) span,
+.button-wrap:has(button:active) span {
+  text-shadow: 0.025em 0.25em 0.05em rgba(0, 0, 0, 0.12);
+}
+.header__button a span{
+    padding: 1.1vw 4.8vw;
+    color: #002E36;
+    min-width: max-content;
 }
