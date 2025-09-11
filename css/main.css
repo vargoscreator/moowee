@@ -735,8 +735,8 @@ input, textarea{
 }
 @media (max-width: 768px) {
     .hero__inner{
-        min-height: auto;
-        gap: 10px;
+        min-height: 366px;
+        gap: 90px;
         padding: 100px 0;
     }
     .hero__video-content{
@@ -1463,6 +1463,12 @@ input, textarea{
         width: 10.69vw;
         height: 10.69vw;
         right: -1.74vw;
+    }
+    .banner__inner::after {
+        width: 65px;
+        height: 40px;
+        top: 64%;
+        left: 73px;
     }
 }
 @media (max-width: 480px) {
@@ -2225,7 +2231,7 @@ input, textarea{
 }
 @media (max-width: 768px) {
     .about{
-        padding-top: 370px;
+        padding-top: 330px;
     }
     .about__inner{
         max-width: 100%;
@@ -2371,15 +2377,15 @@ input, textarea{
 }
 @media (max-width: 768px) {
     .howwork{
-        margin-top: 50px;
+        margin-top: 100px;
     }
     .howwork__inner{
         flex-direction: column;
-        gap: 40px;
+        gap: 130px;
     }
     .howwork__image{
         margin: 0 auto;
-        max-width: 300px;
+        max-width: 220px;
     }
     .howwork__content{
         max-width: 100%;
@@ -2417,10 +2423,25 @@ input, textarea{
         letter-spacing: normal;
         margin-top: 20px;
     }
+    .howwork__image::before {
+        width: 240px;
+        height: 300px;
+    }
+    .howwork__image-sircle {
+        bottom: -98px;
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+    }
+    .howwork__right{
+        flex-direction: column;
+        max-width: 100%;
+        gap: 40px;
+    }
 }
 @media (max-width: 480px) {
     .howwork__image{
-        max-width: 220px;
+        max-width: 190px;
     }
 }
 
