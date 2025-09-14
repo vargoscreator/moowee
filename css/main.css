@@ -2535,7 +2535,9 @@ input, textarea{
     min-height: 3.19vw;
     min-width: 15.63vw;
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
