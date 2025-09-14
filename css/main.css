@@ -927,8 +927,7 @@ input, textarea{
     padding-top: 2.57vw;
     overflow: hidden;
     position: relative;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='779' viewBox='0 0 1440 779' fill='none'%3E%3Cg filter='url(%23filter0_n_3_75)'%3E%3Crect width='1440' height='778.781' fill='url(%23paint0_linear_3_75)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_n_3_75' x='0' y='0' width='1440' height='778.781' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2 2' stitchTiles='stitch' numOctaves='3' result='noise' seed='9102'/%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise'/%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped'/%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood'/%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1'/%3E%3CfeMerge result='effect1_noise_3_75'%3E%3CfeMergeNode in='shape'/%3E%3CfeMergeNode in='color1'/%3E%3C/feMerge%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_3_75' x1='720' y1='0' x2='720' y2='778.781' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23013640'/%3E%3Cstop offset='1' stop-color='%23016D7E'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
-    background-size: cover;
+    background: linear-gradient(180deg, #013640 0%, #016D7E 100%);
 }
 .work__inner{
     position: relative;
@@ -1120,19 +1119,17 @@ input, textarea{
 
 }
 .bg-first{
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='1441' height='3771' viewBox='0 0 1441 3771' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_n_7_47)'%3E%3Crect width='1440' height='2868' transform='matrix(1 0 0 -1 0 3771)' fill='url(%23paint0_linear_7_47)'/%3E%3C/g%3E%3Cg filter='url(%23filter1_n_7_47)'%3E%3Crect width='1440' height='903' transform='translate(0.5)' fill='url(%23paint1_linear_7_47)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_n_7_47' x='0' y='903' width='1440' height='2868' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2 2' stitchTiles='stitch' numOctaves='3' result='noise' seed='2442' /%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise' /%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped' /%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood' /%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1' /%3E%3CfeMerge result='effect1_noise_7_47'%3E%3CfeMergeNode in='shape' /%3E%3CfeMergeNode in='color1' /%3E%3C/feMerge%3E%3C/filter%3E%3Cfilter id='filter1_n_7_47' x='0.5' y='0' width='1440' height='903' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1 1' stitchTiles='stitch' numOctaves='3' result='noise' seed='5805' /%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise' /%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped' /%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood' /%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1' /%3E%3CfeMerge result='effect1_noise_7_47'%3E%3CfeMergeNode in='shape' /%3E%3CfeMergeNode in='color1' /%3E%3C/feMerge%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_7_47' x1='720' y1='0' x2='720' y2='2868' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2301363F'/%3E%3Cstop offset='1' stop-color='%232497AA'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_7_47' x1='720' y1='0' x2='720' y2='903' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2301363F'/%3E%3Cstop offset='1' stop-color='%232497AA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-    background-size: cover;
+    background: linear-gradient(180deg, #01363F 0%, #2497AA 76.44%, #01363F 100%);
     margin-top: -0.07vw;
     overflow: hidden;
 }
 .bg-image{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='1712' viewBox='0 0 1440 1712' fill='none'%3E%3Cg filter='url(%23filter0_n_1_62)'%3E%3Crect y='0.78125' width='1440' height='1711.22' fill='url(%23paint0_linear_1_62)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_n_1_62' x='0' y='0.78125' width='1440' height='1711.22' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2 2' stitchTiles='stitch' numOctaves='3' result='noise' seed='2442'/%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise'/%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped'/%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood'/%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1'/%3E%3CfeMerge result='effect1_noise_1_62'%3E%3CfeMergeNode in='shape'/%3E%3CfeMergeNode in='color1'/%3E%3C/feMerge%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_1_62' x1='720' y1='0.78125' x2='720' y2='1712' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23016D7E'/%3E%3Cstop offset='0.567308' stop-color='%23C7C8C3'/%3E%3Cstop offset='1' stop-color='%23016D7E'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    background: linear-gradient(180deg, #016D7E 0%, #C7C8C3 56.73%, #016D7E 100%);
     background-size: cover;
     margin-top: -0.07vw;
 }
 .bg-second{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='1261' viewBox='0 0 1440 1261' fill='none'%3E%3Cg filter='url(%23filter0_n_1_61)'%3E%3Crect width='1440' height='1382.89' transform='matrix(1 0 0 -1 0 1382.89)' fill='url(%23paint0_linear_1_61)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_n_1_61' x='0' y='0' width='1440' height='1382.89' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2 2' stitchTiles='stitch' numOctaves='3' result='noise' seed='2619'/%3E%3CfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise'/%3E%3CfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3E%3CfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped'/%3E%3CfeFlood flood-color='rgba(0, 0, 0, 0.25)' result='color1Flood'/%3E%3CfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1'/%3E%3CfeMerge result='effect1_noise_1_61'%3E%3CfeMergeNode in='shape'/%3E%3CfeMergeNode in='color1'/%3E%3C/feMerge%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_1_61' x1='720' y1='0' x2='720' y2='1382.89' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23070809'/%3E%3Cstop offset='1' stop-color='%23016D7E'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
-    background-size: cover;
+    background: linear-gradient(0deg, #070809 0%, #016D7E 100%);
     margin-top: -0.07vw;
 }
 /* pricing */
@@ -2275,7 +2272,8 @@ input, textarea{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='306' height='390' viewBox='0 0 306 390' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 55.043V2H41.9737M302.609 55.043V2H262.636M303.609 334.715V387.758H263.636M3 334.715V387.758H42.9737' stroke='%23A6EEFF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");    background-position: center;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='306' height='390' viewBox='0 0 306 390' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 55.043V2H41.9737M302.609 55.043V2H262.636M303.609 334.715V387.758H263.636M3 334.715V387.758H42.9737' stroke='%23A6EEFF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 20.95vw;
@@ -2443,17 +2441,6 @@ input, textarea{
     .howwork__image{
         max-width: 190px;
     }
-}
-
-@property --angle-1 {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: -75deg;
-}
-@property --angle-2 {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: -45deg;
 }
 :root {
   --global--size: clamp(2rem, 4vw, 5rem);
